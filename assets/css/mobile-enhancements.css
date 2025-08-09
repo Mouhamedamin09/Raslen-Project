@@ -1,5 +1,66 @@
 /* Mobile Touch Optimizations */
 @media (max-width: 768px) {
+  /* Hero Section Mobile Organization */
+  .main-hero-area {
+    padding-top: 120px !important;
+    padding-bottom: 80px !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    position: relative;
+    z-index: 10;
+  }
+
+  .hero-content h2 {
+    font-size: 50px !important;
+    line-height: 1.1 !important;
+    margin-bottom: 20px !important;
+    letter-spacing: -1px;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 20 !important; /* Text above image */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Better text visibility */
+  }
+
+  .hero-content p {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 30px !important;
+    max-width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative;
+    z-index: 20 !important; /* Text above image */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Better text visibility */
+  }
+
+  .hero-content img {
+    width: 120px !important;
+    height: 120px !important;
+    object-fit: cover;
+    border-radius: 50% !important;
+    position: absolute !important;
+    top: -60px !important;
+    right: 10% !important;
+    z-index: 1 !important; /* Image behind text */
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    opacity: 0.7; /* Make image more subtle as background */
+  }
+
+  .theme-btn {
+    margin-top: 20px !important;
+    padding: 15px 30px !important;
+    font-size: 16px !important;
+    border-radius: 8px !important;
+  }
+
   /* Ensure touch targets are at least 44px */
   .theme-btn,
   button,
@@ -73,5 +134,386 @@
   .copy-right-text {
     text-align: center !important;
     margin-bottom: 10px;
+  }
+
+  /* Smaller trusted partners logos on mobile */
+  .company-list img {
+    max-width: 60px !important;
+    height: auto !important;
+    opacity: 0.8;
+  }
+
+  .company-list {
+    margin-top: 30px !important;
+  }
+
+  .scroller__inner {
+    gap: 20px !important;
+  }
+}
+
+/* Extra small phones (max-width: 479px) */
+@media (max-width: 479px) {
+  /* Hero Section for Small Phones */
+  .hero-content h2 {
+    font-size: 40px !important;
+    line-height: 1.1 !important;
+    margin-bottom: 15px !important;
+    padding: 0 10px;
+    z-index: 20 !important; /* Text above image */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Stronger shadow for small screens */
+  }
+
+  .hero-content p {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 25px !important;
+    max-width: 95% !important;
+    padding: 0 15px;
+    z-index: 20 !important; /* Text above image */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-content img {
+    width: 100px !important;
+    height: 100px !important;
+    top: -50px !important;
+    right: 5% !important;
+    z-index: 1 !important; /* Image behind text */
+    opacity: 0.6; /* More subtle on small screens */
+  }
+
+  .main-hero-area {
+    padding-top: 100px !important;
+    padding-bottom: 60px !important;
+  }
+
+  /* Company logos */
+  .company-list img {
+    max-width: 50px !important;
+    height: auto !important;
+  }
+
+  .scroller__inner {
+    gap: 15px !important;
+  }
+
+  /* Better container spacing */
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+/* Very small phones (max-width: 375px) */
+@media (max-width: 375px) {
+  .hero-content h2 {
+    font-size: 35px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 12px !important;
+    z-index: 20 !important; /* Text above image */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Strong shadow for visibility */
+  }
+
+  .hero-content p {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 20px !important;
+    z-index: 20 !important; /* Text above image */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .hero-content img {
+    width: 90px !important;
+    height: 90px !important;
+    top: -45px !important;
+    right: 3% !important;
+    z-index: 1 !important; /* Image behind text */
+    opacity: 0.5; /* Very subtle on tiny screens */
+  }
+}
+
+/* About Section Mobile Improvements */
+@media (max-width: 768px) {
+  .about-area {
+    padding: 60px 0 !important;
+  }
+
+  .about-image {
+    text-align: center !important;
+    margin-bottom: 30px !important;
+    padding: 0 20px !important;
+  }
+
+  .about-image img {
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    border-radius: 15px !important;
+    margin: 0 auto !important;
+    display: block !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  .about-content-part {
+    padding: 0 20px !important;
+    text-align: center !important;
+  }
+
+  .about-content-part p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 30px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  /* Counter Section Mobile Organization */
+  .hero-counter-area {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    margin-top: 40px !important;
+    padding: 30px 20px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 15px !important;
+    backdrop-filter: blur(10px) !important;
+  }
+
+  .counter-item {
+    text-align: center !important;
+    padding: 15px !important;
+    background: rgba(74, 158, 255, 0.1) !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .counter-item .count-text {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    color: var(--primary-color) !important;
+    display: block !important;
+    margin-bottom: 5px !important;
+  }
+
+  .counter-item .counter-title {
+    font-size: 14px !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+  }
+}
+
+/* About Section for Small Phones */
+@media (max-width: 479px) {
+  .about-image img {
+    width: 180px !important;
+    height: 180px !important;
+  }
+
+  .about-content-part p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    padding: 0 10px !important;
+  }
+
+  .hero-counter-area {
+    padding: 25px 15px !important;
+    gap: 15px !important;
+  }
+
+  .counter-item {
+    padding: 12px !important;
+  }
+
+  .counter-item .count-text {
+    font-size: 24px !important;
+  }
+
+  .counter-item .counter-title {
+    font-size: 12px !important;
+  }
+}
+
+/* Contact Section Mobile Improvements */
+@media (max-width: 768px) {
+  .contact-area {
+    padding: 60px 0 !important;
+  }
+
+  /* Contact Content Layout */
+  .contact-content-part {
+    padding: 0 20px 40px 20px !important;
+    text-align: center !important;
+  }
+
+  .contact-content-part h2 {
+    font-size: 28px !important;
+    margin-bottom: 15px !important;
+    line-height: 1.2 !important;
+  }
+
+  .contact-content-part p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 30px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    padding: 0 10px !important;
+  }
+
+  /* Contact Form Redesign */
+  .contact-form {
+    padding: 30px 20px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 20px !important;
+    backdrop-filter: blur(15px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    margin: 0 15px !important;
+  }
+
+  .contact-form .form-group {
+    margin-bottom: 20px !important;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100% !important;
+    padding: 15px 20px !important;
+    font-size: 15px !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 2px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
+    color: #fff !important;
+    transition: all 0.3s ease !important;
+    box-sizing: border-box !important;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: var(--primary-color) !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    outline: none !important;
+    box-shadow: 0 0 20px rgba(74, 158, 255, 0.3) !important;
+  }
+
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 14px !important;
+  }
+
+  .contact-form textarea {
+    min-height: 120px !important;
+    resize: vertical !important;
+  }
+
+  /* Submit Button - Same as Desktop */
+  .contact-form .theme-btn {
+    width: 100% !important;
+    background: var(--primary-color) !important;
+    color: var(--text-color) !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    border: 1px solid var(--button-border) !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    border-radius: 2px !important;
+    padding: 20px 34px !important;
+    text-align: center !important;
+    text-transform: none !important;
+    transition: 0.3s !important;
+    margin-top: 10px !important;
+  }
+
+  .contact-form .theme-btn:hover {
+    border: 1px solid var(--button-border) !important;
+    text-decoration: none !important;
+    color: var(--primary-color) !important;
+    transition: 0.3s !important;
+    background: var(--black-color) !important;
+  }
+
+  /* Loading and Message States */
+  .contact-form .loading {
+    opacity: 0.7 !important;
+    pointer-events: none !important;
+  }
+
+  #msgSubmit {
+    margin-top: 20px !important;
+    padding: 15px !important;
+    border-radius: 10px !important;
+    text-align: center !important;
+    font-weight: 500 !important;
+  }
+
+  #msgSubmit.success {
+    background: rgba(76, 175, 80, 0.2) !important;
+    border: 1px solid rgba(76, 175, 80, 0.4) !important;
+    color: #4caf50 !important;
+  }
+
+  #msgSubmit.error {
+    background: rgba(244, 67, 54, 0.2) !important;
+    border: 1px solid rgba(244, 67, 54, 0.4) !important;
+    color: #f44336 !important;
+  }
+}
+
+/* Contact Section for Small Phones */
+@media (max-width: 479px) {
+  .contact-content-part {
+    padding: 0 15px 30px 15px !important;
+  }
+
+  .contact-content-part h2 {
+    font-size: 24px !important;
+  }
+
+  .contact-content-part p {
+    font-size: 14px !important;
+    padding: 0 5px !important;
+  }
+
+  .contact-form {
+    padding: 25px 15px !important;
+    margin: 0 10px !important;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px 15px !important;
+    font-size: 14px !important;
+  }
+
+  .contact-form textarea {
+    min-height: 100px !important;
+  }
+
+  .contact-form .theme-btn {
+    padding: 18px 30px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* Contact Section for Very Small Screens */
+@media (max-width: 375px) {
+  .contact-form {
+    margin: 0 5px !important;
+    padding: 20px 12px !important;
+  }
+
+  .contact-content-part h2 {
+    font-size: 22px !important;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px 12px !important;
+  }
+
+  .contact-form .theme-btn {
+    padding: 16px 25px !important;
+    font-size: 14px !important;
   }
 }
