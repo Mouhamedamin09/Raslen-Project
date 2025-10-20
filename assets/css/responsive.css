@@ -235,6 +235,8 @@ Version      : 1.0
   }
   .hero-content img {
     width: 160px;
+    height: 160px;
+    object-fit: cover;
   }
 
   .scroller__inner img {
@@ -262,6 +264,8 @@ Version      : 1.0
 
   .hero-content img {
     width: 160px;
+    height: 160px;
+    object-fit: cover;
   }
 
   .scroller__inner img {
@@ -1395,195 +1399,9 @@ Version      : 1.0
   }
 }
 
-/* Footer responsive styles */
-@media only screen and (max-width: 767px) {
-  .footer-top {
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
-
-  .footer-top h2 {
-    font-size: 20px;
-    line-height: 1.3;
-    word-break: break-word;
-  }
-
-  .footer-top h2 a {
-    padding: 8px 15px;
-    font-size: 18px;
-  }
-
-  .footer-top p {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-top h2 {
-    font-size: 24px;
-  }
-
-  .footer-top h2 a {
-    font-size: 22px;
-  }
-}
-
 @media only screen and (max-width: 375px) {
   .client-logo-wrap .client-logo-item {
     width: calc(50% - 60px);
-  }
-}
-
-/* Enhanced Mobile Responsiveness - Small Phones (320px-479px) */
-@media only screen and (max-width: 479px) {
-  /* Hero Section Mobile */
-  .hero-content h2 {
-    font-size: 45px !important;
-    line-height: 1.1 !important;
-    margin-bottom: 15px;
-  }
-
-  .hero-content p {
-    font-size: 14px !important;
-    margin-bottom: 20px;
-    line-height: 1.4;
-  }
-
-  .hero-content img {
-    width: 120px !important;
-    right: 5% !important;
-    top: -10% !important;
-  }
-
-  /* Navigation Mobile */
-  .main-header .header-inner {
-    padding: 15px 0;
-  }
-
-  .logo img {
-    height: 30px !important;
-  }
-
-  /* Sections Mobile */
-  .section-title h2 {
-    font-size: 35px !important;
-    line-height: 40px !important;
-    margin-bottom: 20px;
-  }
-
-  /* Services Mobile */
-  .service-item {
-    padding: 30px 20px !important;
-    margin-bottom: 20px;
-  }
-
-  .service-item h4 {
-    font-size: 18px !important;
-  }
-
-  .service-item p {
-    font-size: 14px !important;
-    line-height: 1.5;
-  }
-
-  /* Contact Form Mobile */
-  .contact-form-area {
-    padding: 30px 20px !important;
-    margin-top: 30px;
-  }
-
-  .contact-form-area .form-group {
-    margin-bottom: 20px;
-  }
-
-  .contact-form-area .form-control {
-    padding: 15px !important;
-    font-size: 16px !important; /* Prevents zoom on iOS */
-  }
-
-  .theme-btn {
-    width: 100% !important;
-    padding: 15px 20px !important;
-    font-size: 16px !important;
-  }
-
-  /* Footer Mobile */
-  .footer-top h2 {
-    font-size: 16px !important;
-    line-height: 1.3 !important;
-    word-break: break-all;
-  }
-
-  .footer-top h2 a {
-    padding: 8px 12px !important;
-    font-size: 14px !important;
-  }
-
-  .footer-top {
-    padding: 40px 0 30px 0 !important;
-  }
-
-  /* About Section Mobile */
-  .about-content-part p {
-    font-size: 14px !important;
-    line-height: 1.6;
-  }
-
-  .counter-item {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .hero-counter-area {
-    flex-direction: column !important;
-    gap: 15px;
-  }
-
-  /* Testimonials Mobile */
-  .testimonial-item {
-    margin-bottom: 30px;
-  }
-
-  .testimonial-item .text {
-    font-size: 14px !important;
-    line-height: 1.6;
-  }
-
-  /* General Mobile Spacing */
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  section {
-    padding: 50px 0 !important;
-  }
-
-  .main-hero-area {
-    padding-top: 100px !important;
-    padding-bottom: 60px !important;
-  }
-}
-
-/* Medium Mobile (480px-767px) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .hero-content h2 {
-    font-size: 55px !important;
-    line-height: 1.1 !important;
-  }
-
-  .hero-content img {
-    width: 140px !important;
-    right: 8% !important;
-  }
-
-  .contact-form-area {
-    padding: 40px 25px !important;
-  }
-
-  .theme-btn {
-    width: auto !important;
-    min-width: 200px;
   }
 }
 
